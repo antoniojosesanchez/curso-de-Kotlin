@@ -1,2 +1,5 @@
 # Ignora archivos del sistema Mac 
 .DS_store
+
+# Ignora .gitignore
+.gitignore
