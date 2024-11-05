@@ -10,10 +10,12 @@ fun main() {
 
     // solicitamos la lista de elementos desde el teclado
     println("Introduce la lista de elementos separados por espacios:")
-    val elementos = readLine()?.split(" ")?.map { it.toInt() } ?: emptyList()
+    val entrada = readLine()
 
     // comprobamos si se ha introducido información
-    if (!elementos.isNullOrEmpty) {
+    if (!entrada.isNullOrEmpty()) {
+
+        val elementos = entrada?.split(" ")?.map { it.toInt() } ?: emptyList()
 
         // filtramos por pares
         val pares = elementos.filter { it%2 == 0 }
