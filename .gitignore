@@ -1,0 +1,61 @@
+# Directorios de compilación
+/build/
+/out/
+
+# Archivos y carpetas generados por IntelliJ IDEA
+.idea
+*.iml
+*.iws
+*.ipr
+
+# Archivos de configuración específicos de macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Archivos de configuración de sistema
+.DS_Store
+*.swp
+*.swo
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+.VolumeIcon.icns
+
+# Archivos generados por IntelliJ para el sistema de compilación de Gradle
+.gradle
+.gradle-cache
+.gradle-local-cache
+
+# Archivos de configuración de Kotlin
+*.kts
+.gradle/
+.gradle/*
+
+# Archivos específicos de Java y Kotlin
+*.class
+*.jar
+*.war
+*.ear
+*.ktp
+*.kotlin
+
+# Dependencias de Maven y Gradle
+*.m2/
+*.gradle/
+build/
+
+# Archivos de salida de compilación
+/out/
+/bin/
+node_modules/
+
+# Logs y archivos temporales
+logs/
+*.log
+*.log.*
+*.tmp
+*.temp
+*.pid
+*.pid.lock
