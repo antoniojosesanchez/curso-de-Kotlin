@@ -10,12 +10,16 @@ fun main() {
 
     // solicitamos la lista de elementos desde el teclado
     println("Introduce la lista de elementos separados por espacios:")
-    val elementos = readLine()?.split(",")?.map { it.toInt() } ?: emptyList()
+    val elementos = readLine()?.split(" ")?.map { it.toInt() } ?: emptyList()
 
-    // filtramos por pares
-    val pares = elementos.filter { it%2 == 0 }
+    // comprobamos si se ha introducido información
+    if (!elementos.isNullOrEmpty) {
 
-    // mostramos los pares y la suma de estos
-    println("Números pares: $pares")
-    println("Suma: ${pares.sum()}")
+        // filtramos por pares
+        val pares = elementos.filter { it%2 == 0 }
+
+        // mostramos los pares y la suma de estos
+        println("Números pares: $pares")
+        println("Suma: ${pares.sum()}")
+    }
 }
